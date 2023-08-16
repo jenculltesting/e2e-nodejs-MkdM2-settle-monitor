@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: nodejs-health-check-p1cx
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/jentesting/rhtap-demo-qvxo-tenant/e2e-nodejs/nodejs-health-check-p1cx@sha256:bcd3b4f90c373e9c1e47e2968e163443b45c26dd99edbfe75d5482c6f02690b8
+        name: my-nodejs
+        resources: {}
+status: {}
